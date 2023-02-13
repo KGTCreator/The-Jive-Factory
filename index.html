@@ -23,7 +23,7 @@
 		</ul>
 		<div id="accordionNav">
 			<div class="accordionPanel">
-				<div class="accordionPanelTab" id="eventsWeekTab" onclick="showEventsThisWeek">Events This Week</div>
+				<div class="accordionPanelTab" id="eventsWeekTab" onclick="showEventsThisWeek()">Events This Week</div>
 				<div class="accordionPanelContent" id="eventsWeekContent">
 					<a href="#">
 						<img src="img/thumb-fpcp.jpg" width="180" height="140">
@@ -36,7 +36,7 @@
 				</div>
 			</div>
 			<div class="accordionPanel">
-				<div class="accordionPanelTab" id="comingUpTab" onclick="showComingUp">Coming Up</div>
+				<div class="accordionPanelTab" id="comingUpTab" onclick="showComingUp()">Coming Up</div>
 				<div class="accordionPanelContent" id="comingUpContent">
 					<a href="#" class="eventContent">
 						<img src="img/thumb-woof.jpg" width="180" height="140">
@@ -49,7 +49,7 @@
 				</div>
 			</div>
 			<div class="accordionPanel">
-				<div class="accordionPanelTab" id="pastEventsTab" onclick="showPastEvents">Past Events</div>
+				<div class="accordionPanelTab" id="pastEventsTab" onclick="showPastEvents()">Past Events</div>
 				<div class="accordionPanelContent" id="pastEventsContent">
 					<a href="#">
 						<img src="img/thumb-bugs.jpg" width="180" height="140">
@@ -83,28 +83,7 @@
 	</div>
 	<div id="footer">All content © The Jive Factory. Information on this website is subject to change without notice.</div>
 </div>
-<script>
-	document.getElementById("comingUpContent").style.display = 'none';
-	document.getElementById("pastEventsContent").style.display = 'none';
 
-	function hidePanels() {
-		document.getElementById("comingUpContent").style.display = 'none';
-		document.getElementById("pastEventsContent").style.display = 'none';
-		document.getElementById("eventsWeekContent").style.display = 'none';
-	}
-
-	function showComingUp(){
-		hidePanels();
-		document.getElementById("comingUpContent").style.display = 'block';
-	}
-
-	function showPastEvents(){
-
-	}
-
-	function showEventsThisWeek(){
-
-	}
-		</script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
